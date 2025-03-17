@@ -42,9 +42,12 @@ export default function ImageModal({ isOpen, onRequestClose, image }) {
             src={image.path}
             alt={image.desc}
             style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "contain", // Вписывает изображение БЕЗ ОБРЕЗКИ
+              maxWidth: "90vw",
+              maxHeight: "90vh",
+              width: "auto",
+              height: "auto",
+              display: "block",
+              margin: "auto",
             }}
           />
         </div>
